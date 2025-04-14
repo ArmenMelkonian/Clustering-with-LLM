@@ -1,3 +1,0 @@
-[submodule "customer-support-llm-chatbot-training-dataset"]
-	path = customer-support-llm-chatbot-training-dataset
-	url = https://github.com/bitext/customer-support-llm-chatbot-training-dataset.git

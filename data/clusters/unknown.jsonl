@@ -1,0 +1,24 @@
+{"question": "i dont want purchase {{Order Number}} could i cancel it", "cluster": "unknown"}
+{"question": "cance order {{Order Number}}", "cluster": "unknown"}
+{"question": "i dont want this artilce cancel order {{Order Number}}", "cluster": "unknown"}
+{"question": "I doln't want order {{Order Number}}, can you cancel it?", "cluster": "unknown"}
+{"question": "how can I check what payment methods are allowed?", "cluster": "unknown"}
+{"question": "how to see what payment methods are available", "cluster": "unknown"}
+{"question": "I want to list the payment methods", "cluster": "unknown"}
+{"question": "what is the fee for canceling the contract?", "cluster": "unknown"}
+{"question": "what are the fees for canceling the contract?", "cluster": "unknown"}
+{"question": "I need to list th payment methods", "cluster": "unknown"}
+{"question": "how could I see the payment methods?", "cluster": "unknown"}
+{"question": "how much would you charge me if I cancelled the contract?", "cluster": "unknown"}
+{"question": "how much will ya charge me if i cancel the contract", "cluster": "unknown"}
+{"question": "I do not know how to check the delivery methods", "cluster": "unknown"}
+{"question": "wanna see how long it usually takes for the order to arrive", "cluster": "unknown"}
+{"question": "Ineed to check how long the shipment takes", "cluster": "unknown"}
+{"question": "I try to see how long it takes for my delivery to arrive", "cluster": "unknown"}
+{"question": "have a question about the lost pass", "cluster": "unknown"}
+{"question": "I need to see if there is anything new on the compensation", "cluster": "unknown"}
+{"question": "i dont want this artilce cancel order {{Order Number}}", "cluster": "unknown"}
+{"question": "i dont want purchase {{Order Number}} could i cancel it", "cluster": "unknown"}
+{"question": "cance order {{Order Number}}", "cluster": "unknown"}
+{"question": "how much will you charge me for canceling the contract?", "cluster": "unknown"}
+{"question": "I want to list the payment methods", "cluster": "unknown"}

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Delivery Address Changes",
+    "description": "This cluster appears to be related to shipping address management and tracking for online purchases. Users are seeking assistance with setting up, modifying, and tracking their delivery addresses.",
+    "count": 2433
+  },
+  {
+    "name": "Product Acquisitions",
+    "description": "Product Acquisitions Customer Support Cluster providing assistance for purchasing, acquiring, and earning products, as well as order management and product information.",
+    "count": 492
+  },
+  {
+    "name": "Registration Problems",
+    "description": "This cluster is focused on providing assistance and support for registration-related issues with online platforms or services. Users are seeking help with various problems such as account errors, password issues, delivery address setup, and lost access keys.",
+    "count": 546
+  },
+  {
+    "name": "Invoice and Billing",
+    "description": "Cluster is related to customer invoice and billing inquiries, with users seeking assistance in locating and viewing specific invoices.",
+    "count": 1964
+  },
+  {
+    "name": "Shipping Methods",
+    "description": "Shipping Options and Delivery Information Cluster. This cluster provides information on shipping methods, delivery periods, and options for domestic and international shipments.",
+    "count": 820
+  },
+  {
+    "name": "Subscription Services",
+    "description": "This cluster revolves around canceling and terminating subscription services related to corporate newsletters.",
+    "count": 473
+  },
+  {
+    "name": "Customer Support",
+    "description": "Customer Support Cluster: Providing assistance for various customer inquiries, issues, and concerns related to orders, refunds, account management, and other topics within an online platform.",
+    "count": 4247
+  },
+  {
+    "name": "Payment Issues",
+    "description": "The cluster is related to issues with payment for orders, focusing on providing assistance with understanding and navigating payment options and withdrawal charges.",
+    "count": 2895
+  },
+  {
+    "name": "Order Management",
+    "description": "Order management support cluster for issues related to processing orders, modifying existing orders, cancelling purchases, delivery options, product additions, and general order updates.",
+    "count": 2971
+  },
+  {
+    "name": "Refund Requests",
+    "description": "Refund Requests and Reimbursement Assistance.",
+    "count": 4124
+  },
+  {
+    "name": "unknown",
+    "description": "This cluster appears to be related to customer support for an online ordering system, focusing on canceling orders, payment methods, delivery timelines, and contract fees.",
+    "count": 24
+  },
+  {
+    "name": "Account Setup",
+    "description": "This cluster appears to be related to customer support queries for different types of accounts (gold, platinum, pro, premium, standard) and account-related issues such as PIN retrieval, password reset, and account deletion.",
+    "count": 3359
+  },
+  {
+    "name": "Complaints and Issues",
+    "description": "This cluster appears to be related to customer complaints and issues with a company regarding reimbursement, compensation, and refunds, indicating a need for assistance in filing consumer claims against the organization.",
+    "count": 1797
+  },
+  {
+    "name": "Feedback and Reviews",
+    "description": "This cluster is about leaving feedback and reviews for products and services offered by a company, with various inquiries related to submitting comments, opinions, and suggestions for improvement.",
+    "count": 667
+  }
+]
