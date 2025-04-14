@@ -1,0 +1,18 @@
+You are an assistant tasked with analyzing a set of questions to discover semantic patterns.
+Below is the full list of questions (only the raw question text):
+
+<Questions>
+{{questions}}
+<Questions>
+
+Please carefully examine all the questions and identify the underlying topics they address.
+Based solely on the semantic content, generate a set of concrete and distinct labels that capture the main themes.
+- The labels must be clearly different from each other with minimal or no overlap.
+- Avoid generic or ambiguous labels; each label should be specific and represent a unique, overall class.
+- Do not include any introductory or concluding text—only output the results.
+- Output the results in a parsable JSON format with a key "labels", where the value is a list of label strings.
+For example:
+{
+  "labels": ["Business Strategy", "Technology Innovations", "Health and Wellness", "Travel Recommendations"]
+}
+Ensure that your answer is strictly in valid JSON format.
