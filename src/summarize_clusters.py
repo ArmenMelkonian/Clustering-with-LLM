@@ -26,7 +26,6 @@ def get_random_sample_questions(file_path, sample_size=50):
     for line in sample_lines:
         try:
             data = json.loads(line)
-            # Assuming every json object has a 'question' key
             questions.append(data.get('question', ''))
         except json.JSONDecodeError as e:
             print(f"Error decoding JSON in file {file_path}: {e}")
@@ -57,12 +56,10 @@ def process_cluster_files(directory):
     """
     clusters = []
 
-    # List all files in the directory that end with .jsonl
     for file_name in os.listdir(directory):
         if file_name.endswith('.jsonl'):
             file_path = os.path.join(directory, file_name)
 
-            # Read all lines to count the questions
             with open(file_path, 'r', encoding='utf-8') as f:
                 lines = f.readlines()
             count = len(lines)
@@ -95,8 +92,5 @@ if __name__ == "__main__":
     clusters_dir = CFG.clusters_dir
     output_file = CFG.output_json_path
 
-    # Process the clusters and create the summary dictionaries.
     clusters = process_cluster_files(clusters_dir)
-
-    # Save the summaries to a JSON file.
     save_clusters_to_json(clusters, output_file)
