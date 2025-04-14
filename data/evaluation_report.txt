@@ -1,0 +1,61 @@
+Mapping of Ground Truth to Predicted Labels with Discussion of Overlaps and Gaps
+
+1. Mapping Ground Truth to Predicted Labels
+
+Ground Truth Label           | Likely Predicted Label(s)                          | Rationale
+-----------------------------------------------------------------------------------------------
+cancel_order                 | Order Management                                   | Cancelling orders is usually handled within the overall order process.
+change_order                 | Order Management                                   | Changing an order is an adjustment within order management.
+change_shipping_address      | Delivery Address Changes                           | Changing a shipping address specifically corresponds to modifying the delivery address.
+check_cancellation_fee       | Order Management                                   | Checking cancellation fees is part of the order management process.
+check_invoice                | Invoice and Billing                                | Directly related to invoicing, hence fits the billing category.
+check_payment_methods        | Payment Issues                                     | Evaluating available payment methods falls under troubleshooting payment issues.
+check_refund_policy          | Refund Requests                                    | Understanding refund policies is part of handling refund-related inquiries.
+complaint                    | Complaints and Issues                              | Complaints generally map well into a category that aggregates various issues and dissatisfaction.
+contact_customer_service     | Customer Support                                   | Directly aligns with seeking assistance from customer service.
+contact_human_agent          | Customer Support                                   | Contacting a human agent is part of the support function.
+create_account               | Account Setup                                      | Account creation is clearly part of setting up a new account.
+delete_account               | Account Setup                                      | Account deletion is handled under account management related activities.
+delivery_options             | Shipping Methods                                   | “Delivery options” typically refer to the available shipping methods.
+delivery_period              | Shipping Methods                                   | Information on the delivery period is intrinsically linked to shipping methods and logistics.
+edit_account                 | Account Setup                                      | Editing account details falls under account management and setup.
+get_invoice                  | Invoice and Billing                                | Receiving an invoice is covered by the billing and invoicing process.
+get_refund                   | Refund Requests                                    | Directly relates to initiating or querying a refund process.
+newsletter_subscription      | Subscription Services                              | Subscribing to a newsletter fits neatly under subscription-based services.
+payment_issue                | Payment Issues                                     | Clearly indicates a problem with payment, aligning with the “Payment Issues” category.
+place_order                  | Order Management (or potentially Product Acquisitions)*
+                             |                                                   | Ordering is a core part of order management, though “Product Acquisitions” may represent a nuanced focus on the product search aspect.
+recover_password             | Account Setup                                      | Recovering a password is part of managing account access and setup.
+registration_problems        | Registration Problems                              | Direct mapping as the ground truth directly uses similar phrasing.
+review                       | Feedback and Reviews                               | Reviews are a form of feedback on products or services, fitting into this category.
+set_up_shipping_address      | Delivery Address Changes                           | Setting up a shipping address directly corresponds to modifying a delivery address.
+switch_account               | Account Setup                                      | Switching between accounts is managed within account-related processes.
+track_order                  | Order Management                                   | Tracking an order is a typical component of managing orders.
+track_refund                 | Refund Requests                                    | Tracking the status of a refund is inherently part of the refund process.
+
+*Note: “Product Acquisitions” is ambiguous in this context. For many scenarios, “place_order” fits better under “Order Management” unless your dataset distinguishes between the product selection and the actual ordering process.
+
+2. Discussion on Overlaps and Gaps
+
+Overlaps in Predicted Labels:
+- Order Management vs. Product Acquisitions:
+  The ground truth label "place_order" naturally fits under "Order Management." This raises the question of whether “Product Acquisitions” is capturing a distinct process (such as browsing or product selection), or if it is redundant. Review your dataset’s nuances to decide if these should be merged.
+  
+- Shipping Methods vs. Delivery Address Changes:
+  There is a clear separation:
+  - Shipping Methods covers labels like “delivery_options” and “delivery_period” which focus on how and when products are shipped.
+  - Delivery Address Changes targets actions such as “change_shipping_address” and “set_up_shipping_address.”
+
+Ambiguous or Multi-Faceted Cases:
+- Some ground truth labels may fit into multiple predicted categories. For example, check_payment_methods could arguably be part of both "Payment Issues" and "Order Management." However, in this mapping, it is best placed under "Payment Issues" to focus on troubleshooting payment-related concerns.
+- Both cancel_order and change_order are inherently order-related and thus fall under “Order Management,” despite them representing different user intents.
+
+General Considerations:
+- Precision vs. Recall:
+  Ensure that candidate labels are comprehensive (high recall) and specific (high precision). Overly broad categories might capture unrelated behaviors, while excessively narrow ones might miss associated actions.
+  
+- Redundancy:
+  Evaluate if predicted labels that appear to overlap (e.g., “Order Management” and “Product Acquisitions”) can be merged for a clearer and more efficient categorization scheme.
+  
+- Contextual Nuances:
+  Some specific tasks such as "check_cancellation_fee" or "check_refund_policy" may benefit from tailored subcategories if they represent unique processes in your business context. In such cases, consider refining candidate labels further based on domain feedback.
